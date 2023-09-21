@@ -145,26 +145,27 @@ li {
 }
 
 button {
-    display: block;
+    
     margin: 20px auto;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #252c3a;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.score-container {
-    text-align: center;
-    margin-top: 20px;
+   
+ 
 }
 
 #score {
-    font-size: 24px;
+    font-size: 20px;
+    font-family:  'Sora', sans-serif; 
     font-weight: bold;
+    color: #abf770;
+    position: absolute;
+    top: 200px; 
+    width: 40px;
+    text-align: center;
+    
+
 }
