@@ -18,6 +18,10 @@ h1 {
     align-self: self-start;
 }
 
+h3{
+    color: #ccc;
+}
+
 
 
 
@@ -59,11 +63,14 @@ h1 {
     text-align: center;
     justify-items: center;
    
-  
     cursor: pointer;
     
     
     
+}
+.card:active{
+    background-color: #1d2330;
+   
 }
 .card1 {
     
@@ -90,6 +97,9 @@ h1 {
     
     
 }
+.card1:active{
+    background-color: #1d2330;
+}
 .card2 {
   
     width: 250px;
@@ -113,6 +123,9 @@ h1 {
     
     
     
+}
+.card2:active{
+    background-color: #1d2330;
 }
 img {
     max-width: 100%;
