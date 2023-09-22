@@ -32,8 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function updateScore() {
-        scoreDisplay.textContent = score + " / " + questions.length;
+        scoreDisplay.textContent = score
     }
+    questionDisplay.textContent = questions.length;
 
     function nextQuestion() {
         currentQuestionIndex++;
@@ -49,6 +50,31 @@ document.addEventListener("DOMContentLoaded", function () {
             nextQuestion();
         });
     });
+
+    const card = document.getElementById("lua");
+    const card1 = document.getElementById("tesouro");
+    const card2 = document.getElementById("livro");
+    
+    card.addEventListener("click", function () {
+        card.classList.add("clicked");
+        card1.classList.remove("clicked"); // Remova a classe de "card1" se ela estiver presente
+        card2.classList.remove("clicked"); // Remova a classe de "card2" se ela estiver presente
+    });
+    
+    card1.addEventListener("click", function () {
+        card1.classList.add("clicked");
+        card.classList.remove("clicked"); // Remova a classe de "card" se ela estiver presente
+        card2.classList.remove("clicked"); // Remova a classe de "card2" se ela estiver presente
+    });
+    
+    card2.addEventListener("click", function () {
+        card2.classList.add("clicked");
+        card.classList.remove("clicked"); // Remova a classe de "card" se ela estiver presente
+        card1.classList.remove("clicked"); // Remova a classe de "card1" se ela estiver presente
+    });
+    
+
+   
 
     submitButton.addEventListener("click", function () {
         nextQuestion();
