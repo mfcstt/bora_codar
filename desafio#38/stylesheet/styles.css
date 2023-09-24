@@ -68,7 +68,8 @@ h1 {
     align-items: center;
     gap: 6px;
 
-    margin-left: 1000px;
+    margin-left: 900px;
+   margin-top: -90px;
  
    
     border-radius: 8px;
@@ -86,12 +87,20 @@ h1 {
    
     
 }
+.header-container {
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    margin-top: 80px;
+}
 
 
 
 
 .quiz-container {
-    display: inline-table;
+    display: flex;
     justify-content: space-between;
     width: 1060px;
     height: 786px;
@@ -137,7 +146,7 @@ h1 {
 
     justify-items: center;
     justify-self: flex-start;
-     position: absolute;
+    position: absolute;
    
     cursor: pointer;
  
