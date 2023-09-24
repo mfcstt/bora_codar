@@ -29,7 +29,8 @@ body {
 h1 {
     
 
-    margin: 0;
+
+    margin-left: 50px;
     color: var(--colors-base-grey-1, #D9D9D9);
     font-family: Sora;
     font-size: 24px;
@@ -55,10 +56,28 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 28.8px */
+    margin-top: 30px;
+    
+white-space: normal; /* ou white-space: pre-wrap; */
+word-wrap: break-word;
+    
     
    
    
 }
+#question-number{
+
+    margin-top: 500px;
+    margin-left: 50px;
+    color: var(--colors-base-grey-1, #D9D9D9);
+    font-family: Sora;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 13.2px */
+    letter-spacing: 3.6px;
+}
+
  
 #score {
     display: flex;
@@ -127,6 +146,10 @@ h1 {
     padding: 46px 32px;
     margin-left: 108px;
     margin-top: 90px;
+    
+    justify-items: center;
+    justify-self: flex-start;
+    position: absolute;
 
 
     align-items: flex-start;
@@ -143,10 +166,9 @@ h1 {
     color: var(--colors-base-grey-1, #D9D9D9);
     
     font-size: 20px;
+    font-family: Sora;
+    text-align: center;
 
-    justify-items: center;
-    justify-self: flex-start;
-    position: absolute;
    
     cursor: pointer;
  
