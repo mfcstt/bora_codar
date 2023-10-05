@@ -6,14 +6,13 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-.newsletter{
+.nl{
     
     margin-top: -200px;
 }
 
 
 body{
- 
 
     position: relative;
     width: 100%;
@@ -30,20 +29,12 @@ h1{
     height: 48px;
 
     font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 48px;
     line-height: 48px;
 
-
-
     color: #FFFFFF;
 
-
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
 
 }
 
@@ -92,22 +83,23 @@ p{
 
 }
 
+
 #email{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 16px 12px;
-    gap: 12px;
+
 
     width: 291px;
     height: 58px;
 
     background: #202024;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: none;
 
     flex: none;
     order: 0;
     flex-grow: 0;
+
+    margin-top: 60px;
 
 }
 
@@ -116,48 +108,44 @@ p{
     width: 267px;
 height: 26px;
 
+
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 160%;
-/* identical to box height, or 26px */
 
-/* Colors Gray/gray-200 */
 color: #C4C4CC;
 
-
-/* Inside auto layout */
 flex: none;
 order: 1;
 flex-grow: 1;
 
-.newsletter{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
 }
-
-}
-button[type="submit"]{
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
+#button{
 padding: 16px;
 gap: 8px;
 
 width: 169px;
 
+height: 58px;
 
 background: linear-gradient(90deg, #996DFF 0%, #C7AFFF 100%);
-border-radius: 4px;
+border-radius: 10px;
+border: none;
 
+margin-left: 300px;
+top: 242px; 
+position: absolute;
 
+   
 
 font-weight: bold;
 font-size: 15px;
 font-family: 'Roboto';
+
+cursor: pointer;
+
 
 }
 
@@ -178,3 +166,4 @@ top: calc(-60.65px/2 - 80.90px );
 
 
 }
+
