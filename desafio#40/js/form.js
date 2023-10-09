@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Adicione um evento de clique ao botão
     button.addEventListener('click', function(event) {
-        event.preventDefault(); // Impede que o formulário seja enviado (caso ele esteja dentro de um formulário maior)
-
+        event.preventDefault(); // Impede que o formulário seja enviado 
         // Limpe o campo de e-mail e reinicie a página
         const emailInput = document.getElementById('email');
         emailInput.value = '';
