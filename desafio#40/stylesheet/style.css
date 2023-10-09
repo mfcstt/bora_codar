@@ -1,26 +1,29 @@
 * {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     box-sizing: border-box;
-
+   
   }
 
-.nl{
-
-
+.newsletter{
+  position: static;
+  top: 500px;
 }
-
 
 body{
  
 
-    position: absolute;
+
     width: 100%;
     height: 100vh;
     left: 80px;
     top: 328px;
 
     background: #09090A;
+}
+.newsletter{
+  margin-top: 160px;
+  margin-left: 60px;
 }
 
 h1{
@@ -45,18 +48,14 @@ h2{
 
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
+    font-weight:bold;
     font-size: 16px;
-    line-height: 24px;
-
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     
     background: linear-gradient(90deg, #996DFF 0%, #C7AFFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+
     
 
     flex: none;
@@ -99,7 +98,13 @@ p{
     order: 0;
     flex-grow: 0;
 
-    margin-top: 60px;
+    margin-top: 42px;
+    color: #e3e1e7;
+    
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 15px;
+
 
 }
 
@@ -135,7 +140,7 @@ border-radius: 10px;
 border: none;
 
 margin-left: 300px;
-top: 242px; 
+top: 350px; 
 position: absolute;
 
    
@@ -152,62 +157,76 @@ cursor: pointer;
 
 #fundo{
 
-display: flex;
-flex-direction: row;
-align-items: center;
+
+
+top: 0px;
 padding: 0px;
 gap: 41.63px;
 
 position: absolute;
 width: 874.24px;
-height: 1165.65px;
-left: 624.49px;
-top: calc(-60.65px/2 - 80.90px );
+height: 1000.65px;
+left: 710px;
+
 
 
 }
-.icone {
-    margin-top: 32px; 
-    display: flex;
-    flex-direction: column;
-    gap: 8px; 
 
-
-  }
   
   .titulo {
     font-size: 18px; 
     line-height: 28px;
     font-weight: 700;
     color: rgba(255, 255, 255, 1); 
+    margin-top: 16px;
+    
+    font-family: 'Roboto';
   }
   
   .texto {
-    font-size: 14px; 
+    color: var(--colors-gray-gray-200, #C4C4CC);
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight:  bold;
     line-height: 20px; 
-    color: rgba(196, 196, 204, 1); 
-  }
 
-  .presente{
-    width: 48px;
-    height: 48px;
-
+ 
   }
-  .foguete{
-    width: 48px;
-    height: 48px;
-  }
-  .raio{
-    width: 48px;
-    height: 48px;
-  }
-  .ferramenta{
-    width: 48px;
-    height: 48px;
-  }
-
   .icones{
-    display: flex;
-    margin-top: 160px;
+    margin-top: 80px;
+    margin-left: 60px;
+    
+    align-content: space-between;
 
   }
+
+  #presente,
+  #foguete,
+  #raio,
+  #ferramenta {
+   
+      width: 48px;
+      height: 48px;
+  }
+
+  .raio{
+    position: absolute;
+    margin-left: 350px;
+    margin-top: -150px;
+  }
+  
+  .ferramenta{
+    position: absolute;
+    margin-left: 650px;
+    margin-top: -150px;
+  }
+ 
+  .presente{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: -150px;
+  }
+
+ 
